@@ -1,0 +1,22 @@
+double calcDistance(int x1, int y1, int x2, int y2) 
+{ 
+	// Calculating distance 
+	return sqrt(pow(x2 - x1, 2) + 
+				pow(y2 - y1, 2) * 1.0); 
+} 
+
+
+void noStuckBalls(){
+	std::vector<double> distances; 
+	// checking first ball  -> 5 (1-..10, 4-..10)
+	for (unsigned int i = 1; i < tenCricles.size(); i++) {
+		double dis = calcDistance(tenCricles[0].getX(), tenCricles[0].getY(), tenCricles[i].getX(), tenCricles[i].getY());
+		if( dis <= (tenCricles[0].getRadius() + tenCricles[i].getRadius()) ){
+
+		}
+
+
+
+	}
+
+}
